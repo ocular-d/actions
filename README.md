@@ -14,17 +14,17 @@
 
 ## 📄 About
 
-GitHub Actions Workflows for QA checks of (technical) documentation.
+Examples of how to use GitHub Actions Workflows for QA checks of (technical) documentation.
 
 ## 🚀 Usage
 
-TBC
+Copy the examples, or use them as a base or inspiration for you own workflows.
 
 ## 🤝 Contributing
 
-We are a community effort, and everybody is most welcome to participate!
+Please consider contributing by improving the examples or by committing new ones!
 
-Be it filing bugs, formulating enhancements, creating pull requests, or any other means of contribution, we encourage contributions from everyone.
+We are a community effort, and everybody is most welcome to participate!
 
 ## 📝 License
 
