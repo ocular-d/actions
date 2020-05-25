@@ -1,0 +1,27 @@
+name: Lint Docs
+
+on:
+  push:
+    # Sequence of patterns matched against refs/heads
+    #branches-ignore:
+    #  - 'master'  # Ignore push events to branches matching master
+    #  - 'develop' # Ignore push events to branches matching develop
+
+    paths:
+      - 'docs/**'
+
+jobs:
+  Markdown-Link-Check:
+    strategy:
+      matrix:
+        file-extension: [.md]
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        config-file: '.github/mlc_config.json'
+        folder-path: 'docs'
